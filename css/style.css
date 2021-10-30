@@ -1,0 +1,573 @@
+/*{
+    --para-color: #888;
+    --heading-color: #2d2d43;
+    --theme-light: #efefef;
+    --primary-color: #e7272d;
+    --secondary-color: #ffe119;
+    --border-radius: 8px;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #e7272d;
+    --secondary: #ffe119;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+*/
+/*
+
+
+*/
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.pd-y{
+    padding: 100px 0px;
+}
+body{
+    width: 1400px;
+}
+
+.item-2{
+    margin: 0px 5%;
+}
+.opacity{
+    background-color: rgba(rgb(158, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 0.4);
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 1;
+}
+.capa{
+    text-transform: capitalize;
+}
+
+
+.clear{
+    clear: both;
+}
+
+/* 1- header*/
+
+.header{
+    background-color: rgba(230, 19, 19, 0.8);
+    color: white;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.logo{
+    float: left;
+    width: 40%;
+}
+
+.header i{
+    position: absolute;
+    top: 20px;
+    left:102;
+}
+
+.logo-title{
+    margin-top: 20px;
+}
+
+.nav{
+    float: left;
+    width: 60%;
+}
+
+.nav-list{
+    list-style-type: none;
+    text-align: right;
+}
+
+.nav-list li{
+    display: inline-block;
+    margin: 20px 5px
+}
+
+.nav-list li a{
+    text-decoration: none;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    transition:background-color  0.2s;
+}
+
+
+.nav-list li a:after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: white;
+    transition: width 0.2s;
+}
+
+.nav-list li > a:hover:after{
+    width: 100%;
+}
+
+.droup-down{
+    position: relative;
+}
+
+.droup-down-list{
+    position: absolute;
+    width: 108px;
+    font-size:16px ;
+    text-align: center;
+    background: rgba(230, 19, 19, 0.8);
+    left: -35px;
+    top: 44px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.droup-down:hover .droup-down-list{
+    visibility: visible;
+    opacity: 1;
+}
+.droup-down > a{
+    width: 100%;
+    height: 100%;
+}
+
+/*home section*/
+
+.home{
+    height: 100vh;
+    position: relative;
+    background-color: #e7272d;
+    position: relative;
+    
+}
+
+.home-content{
+    width: 50%;
+    padding: 140px 0 0 0 ;
+}
+
+.home-desc{
+    display: block;
+    color: #ffe119;
+    font-size: 30px;
+}
+
+.pizza-home{
+    position: absolute;
+    right: 120px;
+    top: 100px;
+}
+
+.only{
+    position: absolute;
+    z-index: 2;
+    top: 90px;
+    right: 470px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #ffe119;
+    color: white;
+    text-align: center;
+}
+
+.only-price{
+    font-size: 30px;
+    margin-top: 15px;
+    color: #b90107;
+}
+
+.home-title{
+    margin-top: 40px;
+    font-size: 100px;
+    color: white;
+}
+
+
+
+/*section-2*/
+
+.section-2-item{
+    float: left;
+    width: 50%;
+    padding: 17px;
+}
+
+.ltr{
+    position: relative;
+    
+}
+
+.ltr:after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+    background-color: #ffe119;
+}
+
+.ltr:hover:after{
+    width: 100%;
+}
+
+.section-2-title{
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: rgb(22, 31, 155);
+}
+
+.section-2-desc{
+    font-size: 25px;
+    color: gray;
+    margin-bottom:40px;
+    line-height: 1.5;
+}
+
+.section-2-desc-2{
+    color: gray;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.section-2-btn{
+    margin-top: 30px;
+    width: 270px;
+    height: 40px;
+    border: none;
+    background-color: #e7272d;
+    color: white;
+    font-size: 18px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.section-2-btn:hover {
+    background-color: rgb(158, 0, 0);
+}
+
+
+.categ{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.categ img{
+    padding-bottom: 30px;
+}
+
+/* section-3*/
+
+.section-3{
+    background-color: rgb(243, 243, 243);
+}
+
+.sec-3-item{
+    float: left;
+    width: 30%;
+    height: 350px;
+}
+
+.sec-3-item img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sec-3-title{
+    font-size: 30px;
+    font-weight: 600px;
+    margin-bottom: 30px;
+    color: rgb(50, 50, 70);
+}
+
+.sec-3-desc{
+    color: gray;
+    word-spacing: 3;
+    font-size: 17px;
+    line-height: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sec-3-btn{
+    width: 150px;
+}
+
+/*gallery*/
+
+.gallery{
+    position: relative;
+}
+
+.gallery-contetnt{
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+
+.gallery-title{
+    color: rgb(110, 110, 110);
+    font-size: 22px;
+    letter-spacing: 1;
+    text-transform: uppercase;
+}
+
+.gallery-desc{
+    font-size: 30px;
+    letter-spacing: 1;
+    margin-top: 20px;
+    color: rgb(50, 50, 70);
+}
+
+.sec-3-images{
+    position: absolute;
+    left: -65px;
+}
+
+.g{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.g1{
+    left: 969px;
+    top: 301px; 
+    width: 250px;
+    height: 250px;
+}
+.g2{
+    left: 609px;
+    top: 93px;
+    width: 334px;
+    height: 250px;
+}
+.g3{
+    left: 340px;
+    top: 414px;
+    width: 252px;
+    height: 196px;
+}
+.g4{
+    left: 609px;
+    top: 355px;
+    width: 334px;
+    height: 256px;
+
+}
+.g5{
+    left: 70px;
+    top: 300px;
+    width: 250px;
+    height: 250px;
+   
+}
+.g6{
+    left: 340px;
+    top: 93px;
+    width: 250px;
+    height: 304px;
+}
+
+/*special*/
+
+.special{
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.special-header-title{
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.special-header-desc{
+    font-size: 50px;
+    color: rgb(50, 50, 70);
+    margin-bottom: 20px;
+}
+
+.special-item{
+    width: 23%;
+    height: 460px;
+    float: left;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto 10px;
+}
+
+.special-item:hover{
+    background-color:  #fce65a;
+}
+
+.special-title{
+    font-size: 20px;
+    margin: 25px 0px;
+    color: rgb(61, 55, 105);
+}
+
+.special-desc{
+    color: gray;
+    margin: 25px 0px;
+}
+
+.special-price{
+    color: rgb(61, 55, 105);
+    margin-bottom: 20px;
+}
+
+.special-btn{
+    width: 150px;
+}
+
+.special-img{
+    
+    width: 100%;
+}
+
+.special-img img{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*testimonals*/
+
+.testimonals{
+    height: 110vh;
+}
+
+.test-title{
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 20px;
+
+}
+
+.test-desc{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(50, 50, 70);
+    margin-bottom: 20px;
+}
+
+.test-item{
+    float: left;
+    width:50%;
+    padding:20px
+}
+
+.test-left-title{
+    font-size: 23px;
+    margin: 150px 0 30px 0;
+    line-height: 1.5;
+    color: rgb(50, 50, 70);
+}
+
+.test-name{
+    font-size: 22px;
+    color: rgb(50, 50, 140);
+}
+
+.test-item img{
+    border-radius: 10px ;
+}
+
+/*footer*/
+
+.footer{
+    background-color: #212529;
+}
+
+.fot-item{
+    float: left;
+    width: 25%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.fot-itemr{
+    border-right: 1px  solid white;
+}
+
+.fot-title{
+    font-size: 26px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.fot-desc,
+.fot-desc2{
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.fot-item a{
+    text-decoration: none;
+    color: gainsboro;
+}
+
+.fot-desc3{
+    color: white;
+    float: left;
+    margin-top: 20px;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.social{
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.social i{
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: 0px 4px;
+    text-align: center;
+}
+
+.social i:hover{
+    color: yellow;
+}
